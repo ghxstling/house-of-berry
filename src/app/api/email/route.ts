@@ -30,7 +30,7 @@ export async function POST(req: NextRequest) {
         name: name,
         address: email,
       },
-      to: "dylan.choy21@gmail.com",
+      to: "houseofberrynz@gmail.com",
       subject: `New message from ${name} | House of Berry`,
       text: `
       Name: ${name}
