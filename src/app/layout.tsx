@@ -2,7 +2,9 @@ import React from "react";
 
 import type { Metadata } from "next";
 import "./globals.css";
+
 import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "House of Berry",
@@ -21,6 +23,7 @@ export default function RootLayout({
         <main className="flex flex-col items-center min-h-screen">
           {children}
         </main>
+        <Footer />
       </body>
     </html>
   );
