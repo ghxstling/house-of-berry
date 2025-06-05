@@ -17,7 +17,7 @@ export default function About() {
       <div className="absolute inset-0 flex items-center justify-end">
         <div className=" max-w-md text-center m-40">
           <h1 className="text-6xl font-bold text-gray-800 mb-16">About Us</h1>
-          <div className="text-left">
+          <div className="text-center">
             <p className="text-lg text-gray-900 mb-4">
               A fun experience. An act of creativity. A moment of indulgence.
             </p>
