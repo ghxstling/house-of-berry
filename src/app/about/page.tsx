@@ -14,7 +14,7 @@ export default function About() {
       />
 
       {/* Text Overlay */}
-      <div className="absolute right-30 top-20 text-center bg-green-100 w-[36rem]">
+      <div className="absolute right-30 top-20 text-center w-[36rem]">
         <h1 className="text-6xl font-bold text-gray-800 mb-8">About Us</h1>
         <div className="text-lg text-gray-900 space-y-4">
           <p>A fun experience. An act of creativity. A moment of indulgence.</p>
