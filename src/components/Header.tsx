@@ -4,8 +4,8 @@ import Link from "next/link";
 
 export default function Header() {
   return (
-    <header className="flex items-center justify-between p-4 bg-[#fff0fc] shadow-sm">
-      <div className="relative w-100 h-16">
+    <header className="flex items-center justify-between py-4 px-12 bg-[#fff0fc] shadow-sm">
+      <div className="relative w-30 h-16">
         <Image
           src="/header_logo.jpg"
           alt="Logo"
