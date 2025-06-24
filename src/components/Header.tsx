@@ -15,7 +15,7 @@ export default function Header() {
         />
       </div>
 
-      <nav className="flex space-x-8 text-gray-800 font-medium">
+      <nav className="flex space-x-8 text-gray-800 font-semibold">
         <Link href="/" className="hover:text-blue-600 ">
           HOME
         </Link>
