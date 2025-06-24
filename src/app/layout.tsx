@@ -1,6 +1,7 @@
 import React from "react";
 
 import type { Metadata } from "next";
+import { playfairFont, sloopFont, bodoniFont } from "@/css/fonts";
 import "./globals.css";
 
 import Header from "@/components/Header";
@@ -17,7 +18,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html
+      lang="en"
+      className={`${playfairFont.variable} ${sloopFont.variable} ${bodoniFont.variable} font-sans`}
+    >
       <body>
         <Header />
         <main className="flex flex-col items-center min-h-screen">
