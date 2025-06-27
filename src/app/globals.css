@@ -127,14 +127,3 @@
     @apply bg-background text-foreground;
   }
 }
-
-.text-outline {
-  -webkit-text-stroke: 1px black;
-  color: #262626;
-}
-
-.text-shadow {
-  text-shadow: -1px 3px 4px rgba(0,0,0,0.5);
-}
-
-
