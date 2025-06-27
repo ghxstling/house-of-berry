@@ -43,6 +43,13 @@
   --radius-xl: calc(var(--radius) + 4px);
 }
 
+@theme {
+  --font-sans: var(--font-playfair);
+  --font-serif: var(--font-playfair);
+  --font-script: var(--font-sloop);
+  --font-modern-serif: var(--font-bodoni);
+}
+
 :root {
   --radius: 0.625rem;
   --background: oklch(1 0 0);
