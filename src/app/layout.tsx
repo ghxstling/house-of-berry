@@ -5,12 +5,6 @@ import "./globals.css";
 
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import { Playfair_Display } from "next/font/google";
-
-const playfair = Playfair_Display({
-  subsets: ["latin"],
-  weight: ["400", "700"], // you can add other weights if needed
-});
 
 export const metadata: Metadata = {
   title: "House of Berry",
@@ -29,9 +23,7 @@ export default function RootLayout({
     >
       <body>
         <Header />
-        <main className="flex-1 w-full flex flex-col items-center">
-          {children}
-        </main>
+        <main className="w-full flex flex-col items-center">{children}</main>
         <Footer />
       </body>
     </html>
