@@ -48,6 +48,11 @@
   --font-serif: var(--font-playfair);
   --font-script: var(--font-sloop);
   --font-modern-serif: var(--font-bodoni);
+
+  --color-hob-lightpink: oklch(0.9681 0.0233 334.28);
+  --color-hob-pink: oklch(0.7958 0.0942 2.46);
+  --color-hob-matcha: oklch(0.6053 0.1367 154.91);
+  --color-hob-darkgray: oklch(0.2686 0 0);
 }
 
 :root {

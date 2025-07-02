@@ -1,5 +1,4 @@
 import React from "react";
-
 import type { Metadata } from "next";
 import { playfairFont, sloopFont, bodoniFont } from "@/css/fonts";
 import "./globals.css";
@@ -24,9 +23,7 @@ export default function RootLayout({
     >
       <body>
         <Header />
-        <main className="flex flex-col items-center min-h-screen">
-          {children}
-        </main>
+        <main className="w-full flex flex-col items-center">{children}</main>
         <Footer />
       </body>
     </html>
