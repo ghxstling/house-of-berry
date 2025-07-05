@@ -5,7 +5,7 @@ const LINK_STYLE = "hover:text-red-500 transition-colors duration-150";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#FFEFFB] p-10 flex items-center w-full relative">
+    <footer className="bg-hob-lightpink p-10 flex items-center w-full relative">
       <div className="text-center absolute left-0 right-0">
         <p>House of Berry</p>
         <p>Copyright &copy; 2025</p>

@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function Contact() {
   return (
-    <section className="w-full bg-[#FFEFFB] grid gap-20">
+    <section className="w-full bg-hob-lightpink grid gap-20">
       {/* Image  */}
       <div className="grid grid-cols-2 w-full h-[30rem]">
         {/* TODO: replace placeholder images */}
