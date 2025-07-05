@@ -121,7 +121,7 @@ export default function HomePage() {
         </Button>
       </div>
 
-      <div className="bg-[#FFEFFB] text-center gap-4 py-12">
+      <div className="bg-hob-lightpink text-center gap-4 py-12">
         <h1 className="text-hob-darkgray text-6xl font-script">
           The Berry Difference
         </h1>
