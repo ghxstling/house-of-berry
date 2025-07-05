@@ -3,7 +3,7 @@ import localFont from "next/font/local";
 
 const playfairFont = Playfair_Display({
   subsets: ["latin"],
-  weight: ["500", "600", "700", "800", "900"],
+  weight: ["400", "500", "600", "700", "800", "900"],
   variable: "--font-playfair",
 });
 

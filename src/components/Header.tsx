@@ -2,33 +2,35 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 
+const LINK_STYLE = "hover:text-hob-pink transition-colors duration-100";
+
 export default function Header() {
   return (
-    <header className="flex items-center justify-between py-4 px-12 bg-[#fff0fc] shadow-sm">
+    <header className="flex items-center justify-between py-4 px-12 bg-hob-lightpink shadow-sm">
       <div className="relative w-30 h-16">
         <Image
           src="/header_logo.jpg"
           alt="Logo"
           fill
-          style={{ objectFit: "contain" }}
           priority
+          className="object-contain"
         />
       </div>
 
       <nav className="flex space-x-8 text-gray-800 font-semibold">
-        <Link href="/" className="hover:text-blue-600 ">
+        <Link href="/" className={LINK_STYLE}>
           HOME
         </Link>
-        <Link href="/about" className="hover:text-blue-600">
+        <Link href="/about" className={LINK_STYLE}>
           ABOUT US
         </Link>
-        <Link href="/offerings" className="hover:text-blue-600">
+        <Link href="/offerings" className={LINK_STYLE}>
           OFFERINGS
         </Link>
-        <Link href="/faqs" className="hover:text-blue-600">
+        <Link href="/faqs" className={LINK_STYLE}>
           FAQS
         </Link>
-        <Link href="/contact" className="hover:text-blue-600">
+        <Link href="/contact" className={LINK_STYLE}>
           CONTACT
         </Link>
       </nav>

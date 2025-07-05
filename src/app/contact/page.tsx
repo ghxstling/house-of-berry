@@ -13,7 +13,7 @@ import {
 } from "@/components/ui/card"
 export default function Contact() {
   return (
-    <section className="w-full bg-[#FFEFFB] grid gap-20">
+    <section className="w-full bg-hob-lightpink grid gap-20">
       {/* Image  */}
       <div className="grid grid-cols-2 w-full h-[30rem]">
         {/* TODO: replace placeholder images */}
@@ -39,7 +39,9 @@ export default function Contact() {
 
       <div className="w-full gap-12 py-12 grid justify-center bg-white">
         <div className="text-lg space-y-6 text-center w-4xl">
-          <h1 className="text-4xl mb-12 text-[#F0A3B7]">Catch the Cart</h1>
+          <h1 className="text-4xl mb-12 text-hob-pink font-bold">
+            Catch the Cart
+          </h1>
           <p>Got an event coming up? We&apos;d love to be there!</p>
           <p>
             Fill out the form below and our team will get back to you ASAP.
@@ -119,7 +121,7 @@ export default function Contact() {
             
           </code>
         </div>
-        <p className="text-center">
+        <p className="text-center italic">
           If you have any other questions, feel free to <br />
           email houseofberrynz@gmail.com
         </p>
