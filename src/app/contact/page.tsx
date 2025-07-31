@@ -1,16 +1,8 @@
 import React from "react";
 import jacqueline from "../../../public/jackie.png";
 import Image from "next/image";
-import { Button } from "@/components/ui/button";
-import {
-  Card,
-  CardAction,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card"
+import ContactForm from "@/components/ContactForm";
+
 export default function Contact() {
   return (
     <section className="w-full bg-hob-lightpink grid gap-20">
@@ -59,67 +51,7 @@ export default function Contact() {
           </p>
         </div>
         <div className=" w-4xl">
-           <code>
-            <Card className="border-none shadow-none">
-                
-                <CardContent>
-                  <form>
-                    <div className="flex flex-col gap-5">
-                      <div className="flex">
-                        <div className = "outline outline-green-600  w-7/15">
-                          <input
-                          id="Name"
-                          type="Name"
-                          placeholder="Name"
-                          className= "pl-4 w-full"
-                          required
-                        />
-                        </div>
-                        <div className = "w-1/15"> </div>
-                        <div className = "outline outline-green-600  w-7/15">
-                          <input
-                          id="phoneNumber"
-                          type="phoneNumber"
-                          placeholder="Phone Number"
-                          className= "pl-4 w-full"
-                          required
-                        />
-                        </div>
-                        
-                      </div>
-                      
-                      <div className="grid outline outline-green-600 gap-2">
-                        <input
-                          id="email"
-                          type="email"
-                          placeholder="Email Address"
-                          className= "pl-4 w-full"
-                          required
-                        />
-                      </div>
-                      <div className="grid outline outline-green-600  gap-2 h-14">
-                        <input
-                          id="comment"
-                          placeholder="Comment"
-                          className= "pl-4 w-full"
-                          required
-                        />
-                      </div>
-                    </div>
-                  </form>
-                  
-                </CardContent>
-                <CardFooter className = "relative">
-                  <div className = "absolute top-5 left-1/2 -translate-x-1/2 -translate-y-1/2   ">
-                    <Button className = "bg-[#f0acc4] text-black hover:bg-[#fff0fc]">
-                      BOOK NOW
-                    </Button>
-                  </div>
-                  
-                </CardFooter>
-            </Card>
-            
-          </code>
+          <ContactForm />
         </div>
         <p className="text-center italic">
           If you have any other questions, feel free to <br />
