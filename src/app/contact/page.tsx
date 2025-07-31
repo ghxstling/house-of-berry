@@ -1,6 +1,7 @@
 import React from "react";
 import jacqueline from "../../../public/jackie.png";
 import Image from "next/image";
+import ContactForm from "@/components/ContactForm";
 
 export default function Contact() {
   return (
@@ -49,8 +50,8 @@ export default function Contact() {
             there!
           </p>
         </div>
-        <div className="bg-green-200 w-4xl">
-          PLACEHOLDER FOR <code>ContactForm</code> component
+        <div className=" w-4xl">
+          <ContactForm />
         </div>
         <p className="text-center italic">
           If you have any other questions, feel free to <br />
