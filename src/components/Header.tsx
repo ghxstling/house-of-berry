@@ -6,7 +6,7 @@ const LINK_STYLE = "hover:text-hob-pink transition-colors duration-100";
 
 export default function Header() {
   return (
-    <header className="flex items-center justify-between py-4 px-12 bg-hob-lightpink shadow-sm">
+    <header className="flex items-center justify-between lg:py-4 lg:px-12 bg-hob-lightpink shadow-sm">
       <div className="relative w-30 h-16">
         <Image
           src="/header_logo.jpg"
@@ -17,7 +17,7 @@ export default function Header() {
         />
       </div>
 
-      <nav className="flex space-x-8 text-gray-800 font-semibold">
+      <nav className="flex lg:space-x-8 text-gray-800 font-semibold">
         <Link href="/" className={LINK_STYLE}>
           HOME
         </Link>

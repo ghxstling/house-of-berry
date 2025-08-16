@@ -69,7 +69,7 @@ export default function HomePage() {
   return (
     <section className="flex flex-col w-full h-full">
       <div className="-z-10">
-        <div className="flex w-full h-90 justify-center">
+        <div className="flex w-full lg:h-90 justify-center">
           {heroCollage[0].map((img, _) => {
             return (
               <img
@@ -81,7 +81,7 @@ export default function HomePage() {
             );
           })}
         </div>
-        <div className="flex w-full h-90 justify-center">
+        <div className="flex w-full lg:h-90 justify-center">
           {heroCollage[1].map((img, _) => {
             return (
               <img
@@ -95,15 +95,15 @@ export default function HomePage() {
         </div>
       </div>
 
-      <div className="text-center py-12 leading-tight space-y-4 w-2xl justify-center mx-auto font-semibold text-xl">
-        <div className="text-[2.5rem] text-hob-darkgray text-center leading-tight">
+      <div className="text-center lg:py-12 leading-tight space-y-4 lg:w-2xl justify-center mx-auto font-semibold lg:text-xl">
+        <div className="lg:text-[2.5rem] text-hob-darkgray text-center leading-tight">
           <p>
             Serving
-            <span className="text-hob-matcha font-script font-medium text-[3rem]">
+            <span className="text-hob-matcha font-script font-medium lg:text-[3rem]">
               {" Matcha "}
             </span>
             and
-            <span className="text-[#77380C] font-script font-medium text-[3rem]">
+            <span className="text-[#77380C] font-script font-medium lg:text-[3rem]">
               {" Coffee "}
             </span>
             with Love, and on the go.
@@ -114,7 +114,7 @@ export default function HomePage() {
           House of Berry isn&apos;t just about coffee or matcha. It&apos;s about
           turning everyday moments into something special—one sip at a time.
         </p>
-        <Button className="bg-hob-pink text-black rounded-xl px-6 cursor-pointer hover:bg-[#F6CBD7] hover:shadow-md mt-4 tracking-wide">
+        <Button className="bg-hob-pink text-black rounded-xl lg:px-6 cursor-pointer hover:bg-[#F6CBD7] hover:shadow-md mt-4 tracking-wide">
           <Link href="/offerings" className="text-lg">
             Offerings
           </Link>
@@ -122,7 +122,7 @@ export default function HomePage() {
       </div>
 
       <div className="bg-hob-lightpink text-center gap-4 py-12">
-        <h1 className="text-hob-darkgray text-6xl font-script">
+        <h1 className="text-hob-darkgray lg:text-6xl font-script">
           The Berry Difference
         </h1>
 
@@ -132,19 +132,19 @@ export default function HomePage() {
           <br />
           shaking up expectations. Here&apos;s what makes us different...
         </p>
-        <div className="flex justify-center gap-6 mt-8">
+        <div className="flex justify-center lg:gap-6 lg:mt-8">
           {berryDiffBoxes.map((box, _) => {
             return (
               <div
                 key={_}
-                className="size-72 flex flex-col items-center justify-between bg-white rounded-md p-4 shadow-lg"
+                className="lg:size-72 flex flex-col items-center justify-between bg-white rounded-md lg:p-4 shadow-lg"
               >
-                <div className="size-40 bg-[#F5F5F5] rounded-md" />
-                <h1 className="text-hob-matcha text-base font-semibold">
+                <div className="lg:size-40 bg-[#F5F5F5] rounded-md" />
+                <h1 className="text-hob-matcha lg:text-base font-semibold">
                   {box.title}
                 </h1>
 
-                <p className="text-hob-darkgray text-center text-sm">
+                <p className="text-hob-darkgray text-center lg:text-sm">
                   {box.description}
                 </p>
               </div>
@@ -154,10 +154,10 @@ export default function HomePage() {
       </div>
 
       {/* TODO: use high-res images */}
-      <div className="grid text-left px-20 py-30 gap-6 w-[115rem] mx-auto">
+      <div className="grid text-left lg:px-20 lg:py-30 lg:gap-6 lg:w-[115rem] mx-auto">
         <div className="flex items-center justify-between">
-          <div className="w-112 justify-center mx-auto">
-            <h1 className="font-modern-serif text-hob-matcha text-3xl font-bold mb-4">
+          <div className="lg:w-112 justify-center mx-auto">
+            <h1 className="font-modern-serif text-hob-matcha lg:text-3xl font-bold lg:mb-4">
               What is Matcha?
             </h1>
             Matcha is a finely ground powder made from specially grown and
@@ -170,8 +170,8 @@ export default function HomePage() {
         </div>
         <div className="flex items-center justify-between">
           <img src="/matcha/2.png" alt="Matcha 2" />
-          <div className="w-112 justify-center mx-auto  text-right">
-            <h1 className="font-modern-serif text-hob-matcha text-3xl font-bold mb-4">
+          <div className="lg:w-112 justify-center mx-auto  text-right">
+            <h1 className="font-modern-serif text-hob-matcha lg:text-3xl font-bold lg:mb-4">
               Our Commitment to Quality
             </h1>
             We use ceremonial grade matcha. which is the highest quality
@@ -182,8 +182,8 @@ export default function HomePage() {
           </div>
         </div>
         <div className="flex items-center justify-between">
-          <div className="w-112 justify-center mx-auto">
-            <h1 className="font-modern-serif text-hob-matcha text-3xl font-bold mb-4">
+          <div className="lg:w-112 justify-center mx-auto">
+            <h1 className="font-modern-serif text-hob-matcha lg:text-3xl font-bold lg:mb-4">
               Benefits in Every Sip
             </h1>
             Matcha is a green powerhouse. It is rich in antioxidants, packed

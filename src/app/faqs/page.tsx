@@ -15,7 +15,7 @@ export default function Faqs() {
       <div className="flex flex-col items-center text-center mb-12 px-4">
         {/* IMAGE COLLAGE */}
         <div className="grid grid-cols-4">
-          <div className="size-100 relative">
+          <div className="lg:size-100 relative">
             <Image
               src="/jacqueline.jpg"
               fill
@@ -23,7 +23,7 @@ export default function Faqs() {
               className="object-cover"
             />
           </div>
-          <div className="size-100 relative">
+          <div className="lg:size-100 relative">
             <Image
               src="/matchapour.jpeg"
               fill
@@ -31,7 +31,7 @@ export default function Faqs() {
               className="object-cover"
             />
           </div>
-          <div className="size-100 relative">
+          <div className="lg:size-100 relative">
             <Image
               src="/marketing/showcase-1.jpeg"
               fill
@@ -39,7 +39,7 @@ export default function Faqs() {
               className="object-cover"
             />
           </div>
-          <div className="size-100 relative">
+          <div className="lg:size-100 relative">
             <Image
               src="/marketing/showcase-2.jpeg"
               fill
@@ -49,7 +49,7 @@ export default function Faqs() {
           </div>
         </div>
 
-        <div className="relative w-150 h-80">
+        <div className="relative lg:w-150 lg:h-80">
           <Image
             src="/header_logo.jpg"
             fill
@@ -57,7 +57,7 @@ export default function Faqs() {
             className="object-cover"
           />
         </div>
-        <div className="mt-6 text-lg text-hob-darkgray">
+        <div className="lg:mt-6 lg:text-lg text-hob-darkgray">
           <p className="font-bold">GOT A QUESTION?</p>
           <p>
             If you have any other questions feel free to <br />
@@ -75,7 +75,7 @@ export default function Faqs() {
       <Accordion
         type="single"
         collapsible
-        className="w-4xl text-lg mx-auto px-4"
+        className="lg:w-4xl lg:text-lg mx-auto lg:px-4"
         defaultValue="item-1"
       >
         <AccordionItem value="item-1">
