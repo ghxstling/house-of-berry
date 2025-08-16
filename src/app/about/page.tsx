@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function About() {
   return (
-    <section className="w-full h-[60rem] relative">
+    <section className="w-full lg:h-[60rem] relative">
       {/* Background Image */}
       <Image
         src={jacqueline}
@@ -14,9 +14,11 @@ export default function About() {
       />
 
       {/* Text Overlay */}
-      <div className="absolute right-30 top-20 text-center w-[36rem]">
-        <h1 className="text-8xl text-gray-800 mb-4 font-script">About Us</h1>
-        <div className="text-lg text-gray-900 space-y-4">
+      <div className="lg:absolute lg:right-30 lg:top-20 text-center lg:w-[36rem]">
+        <h1 className="lg:text-8xl text-gray-800 lg:mb-4 font-script">
+          About Us
+        </h1>
+        <div className="lg:text-lg text-gray-900 lg:space-y-4">
           <p>A fun experience. An act of creativity. A moment of indulgence.</p>
           <p>
             House of Berry was born from a simple love: the daily ritual of
