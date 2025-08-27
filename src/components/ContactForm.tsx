@@ -21,7 +21,7 @@ const formSchema = z.object({
   phone: z
     .string()
     .nonempty("You must enter a phone number")
-    .regex(/^\+?[1-9]\d{8,11}$/, "Invalid phone number"),
+    .regex(/^\d{9,11}$/, "Phone number must only contain 9 to 11 digits"),
   email: z
     .string()
     .nonempty("You must enter an email address")
@@ -43,7 +43,6 @@ export default function ContactForm() {
   });
 
   async function onSubmit(values: z.infer<typeof formSchema>) {
-    setMessage(JSON.stringify(values));
     setMessage("Submitting...");
 
     try {
