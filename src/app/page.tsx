@@ -4,42 +4,38 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 
 const heroCollage = [
-  [
-    {
-      src: "/homepage/1.png",
-      alt: "Lots of Love Matcha",
-    },
-    {
-      src: "/homepage/2.png",
-      alt: "House of Berry Market Stand",
-    },
-    {
-      src: "/homepage/3.png",
-      alt: "Love you so Matcha",
-    },
-    {
-      src: "/homepage/4.png",
-      alt: "Pouring whisked matcha into cup",
-    },
-  ],
-  [
-    {
-      src: "/homepage/8.png",
-      alt: "House of Berry setup",
-    },
-    {
-      src: "/homepage/7.png",
-      alt: "Whisked just for you, matcha bar on the go",
-    },
-    {
-      src: "/homepage/6.png",
-      alt: "Whisking matcha at home",
-    },
-    {
-      src: "/homepage/5.png",
-      alt: "Serving matcha and coffee with love",
-    },
-  ],
+  {
+    src: "/homepage/1.png",
+    alt: "Lots of Love Matcha",
+  },
+  {
+    src: "/homepage/2.png",
+    alt: "House of Berry Market Stand",
+  },
+  {
+    src: "/homepage/3.png",
+    alt: "Love you so Matcha",
+  },
+  {
+    src: "/homepage/4.png",
+    alt: "Pouring whisked matcha into cup",
+  },
+  {
+    src: "/homepage/8.png",
+    alt: "House of Berry setup",
+  },
+  {
+    src: "/homepage/7.png",
+    alt: "Whisked just for you, matcha bar on the go",
+  },
+  {
+    src: "/homepage/6.png",
+    alt: "Whisking matcha at home",
+  },
+  {
+    src: "/homepage/5.png",
+    alt: "Serving matcha and coffee with love",
+  },
 ];
 
 const berryDiffBoxes = [
@@ -67,31 +63,18 @@ const berryDiffBoxes = [
 
 export default function HomePage() {
   return (
-    <section className="flex flex-col w-full h-full">
-      <div className="-z-10">
-        <div className="flex w-full lg:h-90 justify-center">
-          {heroCollage[0].map((img, _) => {
-            return (
+    <section className="w-full">
+      <div className="max-w-[110rem] mx-auto">
+        <div className="grid grid-cols-4">
+          {heroCollage.map((img, index) => (
+            <div key={index} className="overflow-hidden">
               <img
-                key={_}
                 src={img.src}
                 alt={img.alt}
-                className="object-cover"
+                className="size-full object-cover"
               />
-            );
-          })}
-        </div>
-        <div className="flex w-full lg:h-90 justify-center">
-          {heroCollage[1].map((img, _) => {
-            return (
-              <img
-                key={_}
-                src={img.src}
-                alt={img.alt}
-                className="object-cover"
-              />
-            );
-          })}
+            </div>
+          ))}
         </div>
       </div>
 
