@@ -1,9 +1,10 @@
 import React from "react";
 
-export default function Home() {
+export default function OfferingsPage() {
   return (
-    <>
-      <div className="bg-red-300 w-full">placeholder for offerings page</div>
-    </>
+    <section className="min-h-screen bg-hob-lightpink flex flex-col gap-4 items-center py-12 justify-center w-full max-h-fit">
+      <h1 className="text-7xl font-script">Our Offerings</h1>
+      <img src="/menu.png" alt="Offerings Menu" className="w-1/3" />
+    </section>
   );
 }
