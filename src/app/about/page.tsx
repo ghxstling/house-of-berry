@@ -14,11 +14,11 @@ export default function About() {
       />
 
       {/* Text Overlay */}
-      <div className="lg:absolute lg:right-30 lg:top-20 text-center lg:w-[36rem]">
-        <h1 className="lg:text-8xl text-gray-800 lg:mb-4 font-script">
+      <div className="relative px-6 py-10 text-center lg:absolute lg:right-30 lg:top-20 text-center lg:w-[36rem] ">
+        <h1 className="text-6xl lg:text-8xl text-gray-800 lg:mb-4 font-script">
           About Us
         </h1>
-        <div className="lg:text-lg text-gray-900 lg:space-y-4">
+        <div className="lg:text-lg text-gray-900 space-y-6 lg:space-y-4">
           <p>A fun experience. An act of creativity. A moment of indulgence.</p>
           <p>
             House of Berry was born from a simple love: the daily ritual of
