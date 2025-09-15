@@ -1,6 +1,8 @@
 import React from "react";
 import jacqueline from "../../../public/jackie.png";
 import Image from "next/image";
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
 
 export default function About() {
   return (
@@ -14,10 +16,8 @@ export default function About() {
       />
 
       {/* Text Overlay */}
-      <div className="lg:absolute lg:right-30 lg:top-20 text-center lg:w-[36rem]">
-        <h1 className="lg:text-8xl text-gray-800 lg:mb-4 font-script">
-          About Us
-        </h1>
+      <div className="lg:absolute lg:right-30 lg:top-20 text-center lg:w-[36rem] lg:space-y-4">
+        <h1 className="lg:text-8xl text-gray-800 font-script">About Us</h1>
         <div className="lg:text-lg text-gray-900 lg:space-y-4">
           <p>A fun experience. An act of creativity. A moment of indulgence.</p>
           <p>
@@ -37,6 +37,16 @@ export default function About() {
             time.
           </p>
         </div>
+        <Button className="bg-hob-pink text-black rounded-xl lg:px-6 cursor-pointer hover:bg-[#F6CBD7] shadow-lg mt-4 tracking-wide">
+          <Link
+            href="https://www.instagram.com/houseofberrynz/"
+            className="text-lg"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            FIND OUR NEXT STALL
+          </Link>
+        </Button>
       </div>
     </section>
   );
