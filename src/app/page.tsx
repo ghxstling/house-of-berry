@@ -161,8 +161,8 @@ export default function HomePage() {
             maximizing its nutritional benefits and delivering a unique, rich
             flavor experience.
           </div>
-          <img src="/matcha/1.png" alt="Matcha 1" className="size-full" />
-          <img src="/matcha/2.png" alt="Matcha 2" className="size-full" />
+          <img src="/matcha/1.png" alt="Matcha 1" />
+          <img src="/matcha/2.png" alt="Matcha 2" />
           <div className="lg:w-112 justify-center mx-auto">
             <h1 className="font-modern-serif text-hob-matcha lg:text-3xl font-bold lg:mb-4">
               Our Commitment to Quality
