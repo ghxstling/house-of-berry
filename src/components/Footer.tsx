@@ -10,7 +10,7 @@ export default function Footer() {
       <div className="text-center absolute left-0 right-0">
         <p>House of Berry</p>
         <p>Copyright &copy; 2025</p>
-        <div className="grid justify-end text-right underline top-0 right-10 absolute">
+        <div className="grid justify-end text-right top-0 right-10 absolute">
           <Link
             href={"https://www.instagram.com/houseofberrynz/"}
             target="_blank"
