@@ -1,20 +1,17 @@
 import React from "react";
-import jacqueline from "../../../public/jackie.png";
-import Image from "next/image";
 
 export default function About() {
   return (
     <section className="w-full lg:h-[60rem] relative">
       {/* Background Image */}
-      <Image
-        src={jacqueline}
+      <img
+        src="/jackie.png"
         alt="Photo of Jacqueline"
-        fill
-        className="object-cover -z-10"
+        className="w-full h-60 object-cover -z-10"
       />
 
       {/* Text Overlay */}
-      <div className="relative px-6 py-10 text-center lg:absolute lg:right-30 lg:top-20 text-center lg:w-[36rem] ">
+      <div className="relative px-6 py-10 text-center lg:absolute lg:right-30 lg:top-20 lg:w-[36rem]">
         <h1 className="text-6xl lg:text-8xl text-gray-800 lg:mb-4 font-script">
           About Us
         </h1>
