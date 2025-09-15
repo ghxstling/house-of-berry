@@ -10,7 +10,7 @@ export default function Header() {
         <img
           src="/header_logo.jpg"
           alt="House of Berry Logo"
-          className="w-full lg:h-30 object-contain"
+          className="w-full lg:h-24 object-contain"
         />
       </div>
 
