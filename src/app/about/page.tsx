@@ -2,12 +2,12 @@ import React from "react";
 
 export default function About() {
   return (
-    <section className="w-full lg:h-[60rem] relative">
+    <section className="w-full lg:h-[60rem] relative bg-hob-lightpink lg:bg-none">
       {/* Background Image */}
       <img
         src="/jackie.png"
         alt="Photo of Jacqueline"
-        className="w-full h-60 object-cover -z-10"
+        className="w-full h-60 lg:h-full object-cover -z-10"
       />
 
       {/* Text Overlay */}
