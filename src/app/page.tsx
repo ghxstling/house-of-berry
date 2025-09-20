@@ -4,42 +4,38 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 
 const heroCollage = [
-  [
-    {
-      src: "/homepage/1.png",
-      alt: "Lots of Love Matcha",
-    },
-    {
-      src: "/homepage/2.png",
-      alt: "House of Berry Market Stand",
-    },
-    {
-      src: "/homepage/3.png",
-      alt: "Love you so Matcha",
-    },
-    {
-      src: "/homepage/4.png",
-      alt: "Pouring whisked matcha into cup",
-    },
-  ],
-  [
-    {
-      src: "/homepage/8.png",
-      alt: "House of Berry setup",
-    },
-    {
-      src: "/homepage/7.png",
-      alt: "Whisked just for you, matcha bar on the go",
-    },
-    {
-      src: "/homepage/6.png",
-      alt: "Whisking matcha at home",
-    },
-    {
-      src: "/homepage/5.png",
-      alt: "Serving matcha and coffee with love",
-    },
-  ],
+  {
+    src: "/homepage/1.png",
+    alt: "Lots of Love Matcha",
+  },
+  {
+    src: "/homepage/2.png",
+    alt: "House of Berry Market Stand",
+  },
+  {
+    src: "/homepage/3.png",
+    alt: "Love you so Matcha",
+  },
+  {
+    src: "/homepage/4.png",
+    alt: "Pouring whisked matcha into cup",
+  },
+  {
+    src: "/homepage/8.png",
+    alt: "House of Berry setup",
+  },
+  {
+    src: "/homepage/7.png",
+    alt: "Whisked just for you, matcha bar on the go",
+  },
+  {
+    src: "/homepage/6.png",
+    alt: "Whisking matcha at home",
+  },
+  {
+    src: "/homepage/5.png",
+    alt: "Serving matcha and coffee with love",
+  },
 ];
 
 const berryDiffBoxes = [
@@ -67,31 +63,18 @@ const berryDiffBoxes = [
 
 export default function HomePage() {
   return (
-    <section className="flex flex-col w-full h-full">
-      <div className="-z-10">
-        <div className="flex w-full lg:h-90 justify-center">
-          {heroCollage[0].map((img, _) => {
-            return (
+    <section className="w-full">
+      <div className="lg:max-w-[120rem] mx-auto lg:px-20">
+        <div className="grid grid-cols-4">
+          {heroCollage.map((img, index) => (
+            <div key={index} className="overflow-hidden">
               <img
-                key={_}
                 src={img.src}
                 alt={img.alt}
-                className="object-cover"
+                className="size-full object-cover"
               />
-            );
-          })}
-        </div>
-        <div className="flex w-full lg:h-90 justify-center">
-          {heroCollage[1].map((img, _) => {
-            return (
-              <img
-                key={_}
-                src={img.src}
-                alt={img.alt}
-                className="object-cover"
-              />
-            );
-          })}
+            </div>
+          ))}
         </div>
       </div>
 
@@ -121,18 +104,24 @@ export default function HomePage() {
         </Button>
       </div>
 
-      <div className="bg-hob-lightpink text-center gap-4 py-12">
-        <h1 className="text-hob-darkgray lg:text-6xl font-script">
-          The Berry Difference
+      <div className="bg-hob-lightpink text-center lg:gap-8 lg:py-12 grid">
+        <h1 className="text-hob-darkgray lg:text-7xl font-modern-serif font-semibold tracking-tighter flex flex-row items-center justify-center gap-2">
+          THE{" "}
+          <span className="text-hob-pink font-script font-normal lg:text-[4rem] tracking-wide">
+            Berry
+          </span>{" "}
+          DIFFERENCE
         </h1>
-
-        <p className="text-hob-darkgray pt-4">
-          Matcha made fun, flavour made bold, and moments <br />
-          made memorable. We&apos;re not just whisking drinks - we&apos;re
-          <br />
-          shaking up expectations. Here&apos;s what makes us different...
-        </p>
-        <div className="flex justify-center lg:gap-6 lg:mt-8">
+        <div className="text-hob-darkgray italic lg:w-[34rem] mx-auto">
+          <p>
+            Since 2025, we&apos;ve been on a mission to make matcha fun - bold
+            in flavour, and whisked to perfection right in front of you.
+            We&apos;re not just crafting drinks, we&apos;re shaking up
+            expectations.
+          </p>
+          <p className="font-bold">Here&apos;s what makes us different...</p>
+        </div>
+        <div className="flex justify-center lg:gap-6">
           {berryDiffBoxes.map((box, _) => {
             return (
               <div
@@ -154,11 +143,17 @@ export default function HomePage() {
       </div>
 
       {/* TODO: use high-res images */}
-      <div className="grid text-left lg:px-20 lg:py-30 lg:gap-6 lg:w-[115rem] mx-auto">
-        <div className="flex items-center justify-between">
+      <div className="lg:py-8 flex flex-col gap-8 w-4/5 lg:max-w-screen-2xl mx-auto lg:px-12">
+        <h1 className="col-span-2 font-modern-serif text-hob-pink lg:text-5xl font-bold text-center">
+          MATCHA 101
+        </h1>
+        <div className="grid grid-cols-2 grid-rows-3 mx-auto place-items-center">
           <div className="lg:w-112 justify-center mx-auto">
             <h1 className="font-modern-serif text-hob-matcha lg:text-3xl font-bold lg:mb-4">
-              What is Matcha?
+              WHAT IS{" "}
+              <span className="text-hob-matcha font-script font-medium lg:text-[3rem]">
+                Matcha?
+              </span>
             </h1>
             Matcha is a finely ground powder made from specially grown and
             processed green tea leaves. Unlike regular tea where you steep and
@@ -167,10 +162,8 @@ export default function HomePage() {
             flavor experience.
           </div>
           <img src="/matcha/1.png" alt="Matcha 1" />
-        </div>
-        <div className="flex items-center justify-between">
           <img src="/matcha/2.png" alt="Matcha 2" />
-          <div className="lg:w-112 justify-center mx-auto  text-right">
+          <div className="lg:w-112 justify-center mx-auto">
             <h1 className="font-modern-serif text-hob-matcha lg:text-3xl font-bold lg:mb-4">
               Our Commitment to Quality
             </h1>
@@ -180,8 +173,6 @@ export default function HomePage() {
             bitterness. It&apos;s traditionally used in Japanese tea ceremonies
             and offers the most vibrant colour and delicate taste experience.
           </div>
-        </div>
-        <div className="flex items-center justify-between">
           <div className="lg:w-112 justify-center mx-auto">
             <h1 className="font-modern-serif text-hob-matcha lg:text-3xl font-bold lg:mb-4">
               Benefits in Every Sip
@@ -189,9 +180,9 @@ export default function HomePage() {
             Matcha is a green powerhouse. It is rich in antioxidants, packed
             with vitamins, and loaded with feel-good perks. It boosts energy
             (without the crash), supports focus, aids digestion, and helps you
-            glow from the inside out
+            glow from the inside out.
           </div>
-          <img src="/matcha/3.png" alt="Matcha 3" />
+          <img src="/matcha/1.png" alt="Matcha 1" />
         </div>
       </div>
     </section>
