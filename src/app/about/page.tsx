@@ -36,7 +36,7 @@ export default function About() {
             time.
           </p>
         </div>
-        <Button className="bg-hob-pink text-black rounded-xl lg:px-6 cursor-pointer hover:bg-[#F6CBD7] shadow-lg mt-4 tracking-wide">
+        <Button className="bg-hob-pink text-black rounded-xl lg:px-6 cursor-pointer hover:bg-[#F6CBD7] shadow-lg mt-4 tracking-wide lg:my-4 my-6">
           <Link
             href="https://www.instagram.com/houseofberrynz/"
             className="text-lg"
