@@ -69,6 +69,17 @@ const berryDiffBoxes = [
   },
 ];
 
+const customers = [
+  {
+    image: "/homepage/customers/1.png",
+    alt: "Customer Showcase 1",
+  },
+  {
+    image: "/homepage/customers/2.png",
+    alt: "Customer Showcase 2",
+  },
+];
+
 export default function HomePage() {
   return (
     <section className="w-full">
@@ -147,10 +158,7 @@ export default function HomePage() {
         </div>
       </div>
 
-      <div className="lg:py-8 flex flex-col gap-8 w-4/5 lg:max-w-screen-2xl mx-auto lg:px-12">
-        <h1 className="col-span-2 font-modern-serif text-hob-pink lg:text-5xl font-bold text-center">
-          MATCHA 101
-        </h1>
+      <div className="lg:py-12 flex flex-col gap-8 w-4/5 lg:max-w-screen-2xl mx-auto lg:px-12">
         <div className="grid grid-cols-2 grid-rows-3 mx-auto place-items-center">
           <div className="lg:w-112 justify-center mx-auto lg:text-xl">
             <h1 className="font-modern-serif text-hob-matcha lg:text-3xl font-bold lg:mb-4">
@@ -197,6 +205,31 @@ export default function HomePage() {
           </div>
           <img src="/homepage/matcha-101/benefits.JPG" alt="Serving matcha" />
         </div>
+      </div>
+
+      {/* TODO: replace this with instagram API in near future */}
+      <div className="bg-hob-lightpink lg:text-4xl font-semibold flex flex-col lg:gap-8 items-center lg:py-12">
+        <h1 className="text-hob-pink font-modern-serif">Sipped & Spotted</h1>
+        <div className="flex justify-center lg:gap-6">
+          {customers.map((showcase, _) => {
+            return (
+              <div key={_} className="bg-white rounded-md lg:p-8 shadow-lg">
+                <img
+                  src={showcase.image}
+                  alt={showcase.alt}
+                  className="lg:size-120 object-cover rounded-md shadow-lg lg:text-base"
+                />
+              </div>
+            );
+          })}
+        </div>
+        <p className="text-center lg:text-lg font-normal leading-tight">
+          Tag @houseofberrynz to be featured!
+          <br />
+          Follow the fun, one post at a time.
+          <br />
+          The drinks are cute. The vibes? Even cuter!
+        </p>
       </div>
     </section>
   );
