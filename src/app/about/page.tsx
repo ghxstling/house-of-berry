@@ -7,17 +7,15 @@ export default function About() {
     <section className="w-full lg:h-[60rem] relative bg-hob-lightpink lg:bg-none">
       {/* Background Image */}
       <img
-        src="/jackie.png"
+        src="/about-us.png"
         alt="Photo of Jacqueline"
         className="w-full h-60 lg:h-full object-cover -z-10"
       />
 
       {/* Text Overlay */}
-      <div className="relative px-6 py-10 text-center lg:absolute lg:right-30 lg:top-20 lg:w-[38rem] lg:space-y-4">
-        <h1 className="text-6xl lg:text-8xl text-gray-800 font-script">
-          About Us
-        </h1>
-        <div className="lg:text-lg text-gray-900 space-y-6 lg:space-y-4">
+      <div className="relative px-6 py-10 text-center lg:absolute lg:right-30 lg:top-20 lg:w-[38rem] lg:space-y-4 lg:text-white">
+        <h1 className="text-6xl lg:text-8xl font-script">About Us</h1>
+        <div className="lg:text-lg space-y-6 lg:space-y-4">
           <p>A fun experience. An act of creativity. A moment of indulgence.</p>
           <p>
             House of Berry was born from a simple love: the daily ritual of
@@ -31,9 +29,8 @@ export default function About() {
             smooth iced lattes crafted from bold flavours.
           </p>
           <p>
-            House of Berry isn&apos;t just about coffee or matcha. It&apos;s
-            about turning everyday moments into something special - one sip at a
-            time.
+            House of Berry isn&apos;t just about matcha. It&apos;s about turning
+            everyday moments into something special - one sip at a time.
           </p>
         </div>
         <Button className="bg-hob-pink text-black rounded-xl lg:px-6 cursor-pointer hover:bg-[#F6CBD7] shadow-lg mt-4 tracking-wide lg:my-4 my-6">
