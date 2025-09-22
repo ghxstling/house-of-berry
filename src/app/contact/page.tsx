@@ -27,7 +27,7 @@ export default function Contact() {
         </div>
       </div>
 
-      <div className="lg:gap-12 lg:py-12 grid justify-center bg-white">
+      <div className="lg:gap-12 lg:py-12 grid justify-items-center bg-white">
         <div className="lg:text-lg lg:space-y-6 text-center lg:w-4xl">
           <h1 className="text-4xl lg:mb-12 text-hob-pink font-bold">
             Catch the Cart
@@ -48,7 +48,7 @@ export default function Contact() {
             there!
           </p>
         </div>
-        <div className="lg:w-4xl">
+        <div className="lg:w-3xl">
           <ContactForm />
         </div>
         <p className="text-center italic">
