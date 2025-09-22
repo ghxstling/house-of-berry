@@ -1,20 +1,22 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 const LINK_STYLE = "hover:text-hob-pink transition-colors duration-100";
 
 export default function Header() {
   return (
-    <header className="sticky flex items-center justify-between lg:px-16 bg-hob-lightpink shadow-md">
-      <div>
-        <img
+    <header className="sticky flex justify-center items-center w-full lg:px-12 lg:h-24 bg-hob-lightpink shadow-md">
+      <div className="absolute w-full lg:h-24 -top-2">
+        <Image
           src="/header_logo.jpg"
           alt="House of Berry Logo"
-          className="w-full lg:h-24 object-contain"
+          fill
+          objectFit="contain"
         />
       </div>
 
-      <nav className="flex lg:space-x-8 text-gray-800 font-semibold">
+      <nav className="z-10 grid grid-flow-col justify-end w-full lg:gap-8 text-gray-800 font-semibold">
         <Link href="/" className={LINK_STYLE}>
           Home
         </Link>
