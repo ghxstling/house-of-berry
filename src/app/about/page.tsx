@@ -29,9 +29,8 @@ export default function About() {
             smooth iced lattes crafted from bold flavours.
           </p>
           <p>
-            House of Berry isn&apos;t just about coffee or matcha. It&apos;s
-            about turning everyday moments into something special - one sip at a
-            time.
+            House of Berry isn&apos;t just about matcha. It&apos;s about turning
+            everyday moments into something special - one sip at a time.
           </p>
         </div>
         <Button className="bg-hob-pink text-black rounded-xl lg:px-6 cursor-pointer hover:bg-[#F6CBD7] shadow-lg mt-4 tracking-wide lg:my-4 my-6">
