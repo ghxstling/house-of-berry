@@ -141,7 +141,7 @@ export default function HomePage() {
             return (
               <div
                 key={_}
-                className="lg:max-w-100 lg:h-full flex flex-col items-center justify-between bg-white rounded-md lg:p-4 shadow-lg lg:gap-2"
+                className="lg:max-w-100 lg:h-full flex flex-col items-center justify-between bg-white rounded-md lg:p-4 lg:pt-8 shadow-lg lg:gap-2"
               >
                 <img
                   src={box.image}
@@ -149,7 +149,6 @@ export default function HomePage() {
                   className="lg:size-80 object-cover rounded-md shadow-lg lg:text-base"
                 />
                 <h1 className="text-hob-matcha font-semibold">{box.title}</h1>
-
                 <p className="text-hob-darkgray text-center lg:text-sm">
                   {box.description}
                 </p>
