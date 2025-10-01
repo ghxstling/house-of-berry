@@ -4,6 +4,15 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import ContactForm from "@/components/ContactForm";
 
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
+
+
 const heroCollage = [
   {
     src: "/homepage/hero/1.png",
@@ -119,44 +128,69 @@ export default function HomePage() {
         </Button>
       </div>
 
-      <div className="bg-hob-lightpink text-center lg:gap-8 lg:py-12 grid">
-        <h1 className="text-hob-darkgray lg:text-7xl font-modern-serif font-semibold tracking-tighter flex flex-row items-center justify-center gap-2">
-          THE{" "}
-          <span className="text-hob-pink font-script font-normal lg:text-[4rem] tracking-wide">
-            Berry
-          </span>{" "}
-          DIFFERENCE
-        </h1>
-        <div className="text-hob-darkgray italic lg:w-[34rem] mx-auto">
-          <p>
-            Since 2025, we&apos;ve been on a mission to make matcha fun - bold
-            in flavour, and whisked to perfection right in front of you.
-            We&apos;re not just crafting drinks, we&apos;re shaking up
-            expectations.
-          </p>
-          <p className="font-bold">Here&apos;s what makes us different...</p>
-        </div>
-        <div className="flex justify-center lg:gap-6">
-          {berryDiffBoxes.map((box, _) => {
-            return (
-              <div
-                key={_}
-                className="lg:max-w-100 lg:h-full flex flex-col items-center justify-between bg-white rounded-md lg:p-4 lg:pt-8 shadow-lg lg:gap-2"
-              >
-                <img
-                  src={box.image}
-                  alt={box.alt}
-                  className="lg:size-80 object-cover rounded-md shadow-lg lg:text-base"
-                />
-                <h1 className="text-hob-matcha font-semibold">{box.title}</h1>
-                <p className="text-hob-darkgray text-center lg:text-sm">
-                  {box.description}
-                </p>
-              </div>
-            );
-          })}
-        </div>
+<div className="bg-hob-lightpink text-center lg:gap-8 lg:py-12 grid">
+  <h1 className="text-hob-darkgray lg:text-7xl font-modern-serif font-semibold tracking-tighter flex flex-row items-center justify-center gap-2">
+    THE{" "}
+    <span className="text-hob-pink font-script font-normal lg:text-[4rem] tracking-wide">
+      Berry
+    </span>{" "}
+    DIFFERENCE
+  </h1>
+
+  <div className="text-hob-darkgray italic lg:w-[34rem] mx-auto">
+    <p>
+      Since 2025, we&apos;ve been on a mission to make matcha fun - bold
+      in flavour, and whisked to perfection right in front of you.
+      We&apos;re not just crafting drinks, we&apos;re shaking up
+      expectations.
+    </p>
+    <p className="font-bold">Here&apos;s what makes us different...</p>
+  </div>
+
+  <div className="block lg:hidden mt-6">
+    <Carousel className="w-full max-w-sm mx-auto">
+      <CarouselContent>
+        {berryDiffBoxes.map((box, i) => (
+          <CarouselItem key={i}>
+            <div className="bg-white rounded-md shadow-lg flex flex-col items-center p-4 gap-3">
+              <img
+                src={box.image}
+                alt={box.alt}
+                className="h-56 w-full object-cover rounded-md shadow-md"
+              />
+              <h2 className="text-hob-matcha font-semibold">{box.title}</h2>
+              <p className="text-hob-darkgray text-sm text-center">
+                {box.description}
+              </p>
+            </div>
+          </CarouselItem>
+        ))}
+      </CarouselContent>
+      <CarouselPrevious />
+      <CarouselNext />
+    </Carousel>
+  </div>
+
+  <div className="hidden lg:flex justify-center lg:gap-6 mt-6">
+    {berryDiffBoxes.map((box, i) => (
+      <div
+        key={i}
+        className="lg:max-w-100 lg:h-full flex flex-col items-center justify-between bg-white rounded-md lg:p-4 lg:pt-8 shadow-lg lg:gap-2"
+      >
+        <img
+          src={box.image}
+          alt={box.alt}
+          className="lg:size-80 object-cover rounded-md shadow-lg lg:text-base"
+        />
+        <h2 className="text-hob-matcha font-semibold">{box.title}</h2>
+        <p className="text-hob-darkgray text-center lg:text-sm">
+          {box.description}
+        </p>
       </div>
+    ))}
+  </div>
+</div>
+
 
       <div className="lg:py-12 flex flex-col gap-8 w-4/5 lg:max-w-screen-2xl mx-auto lg:px-12">
         <div className="grid grid-cols-2 grid-rows-3 mx-auto place-items-center">
