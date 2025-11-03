@@ -1,24 +1,21 @@
 import React from "react";
-import jacqueline from "../../../public/jackie.png";
-import Image from "next/image";
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
 
 export default function About() {
   return (
-    <section className="w-full lg:h-[60rem] relative">
+    <section className="w-full lg:h-[60rem] relative bg-hob-lightpink lg:bg-none">
       {/* Background Image */}
-      <Image
-        src={jacqueline}
+      <img
+        src="/about-us.png"
         alt="Photo of Jacqueline"
-        fill
-        className="object-cover -z-10"
+        className="w-full h-60 lg:h-full object-cover -z-10"
       />
 
       {/* Text Overlay */}
-      <div className="lg:absolute lg:right-30 lg:top-20 text-center lg:w-[36rem]">
-        <h1 className="lg:text-8xl text-gray-800 lg:mb-4 font-script">
-          About Us
-        </h1>
-        <div className="lg:text-lg text-gray-900 lg:space-y-4">
+      <div className="relative px-6 py-10 text-center lg:absolute lg:right-30 lg:top-20 lg:w-[38rem] lg:space-y-4 lg:text-white">
+        <h1 className="text-6xl lg:text-8xl font-script">About Us</h1>
+        <div className="lg:text-lg space-y-6 lg:space-y-4">
           <p>A fun experience. An act of creativity. A moment of indulgence.</p>
           <p>
             House of Berry was born from a simple love: the daily ritual of
@@ -32,11 +29,20 @@ export default function About() {
             smooth iced lattes crafted from bold flavours.
           </p>
           <p>
-            House of Berry isn&apos;t just about coffee or matcha. It&apos;s
-            about turning everyday moments into something special - one sip at a
-            time.
+            House of Berry isn&apos;t just about matcha. It&apos;s about turning
+            everyday moments into something special - one sip at a time.
           </p>
         </div>
+        <Button className="bg-hob-pink text-black rounded-xl lg:px-6 cursor-pointer hover:bg-[#F6CBD7] shadow-lg mt-4 tracking-wide lg:my-4 my-6">
+          <Link
+            href="https://www.instagram.com/houseofberrynz/"
+            className="text-lg"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            FIND OUR NEXT STALL
+          </Link>
+        </Button>
       </div>
     </section>
   );

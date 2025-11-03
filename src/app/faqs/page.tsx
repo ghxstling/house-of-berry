@@ -167,9 +167,9 @@ export default function Faqs() {
           <AccordionContent>
             <p>
               Yes! Our drinks start with nutrient-rich ingredients like
-              ceremonial grade matcha, coffee. We focus on natural ingredients
-              and offer options to customise sweetness levels. Our menu includes
-              both indulgent treats and more health-conscious options.
+              ceremonial grade matcha. We focus on natural ingredients and offer
+              options to customise sweetness levels. Our menu includes both
+              indulgent treats and more health-conscious options.
             </p>
           </AccordionContent>
         </AccordionItem>
