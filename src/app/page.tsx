@@ -1,11 +1,11 @@
 "use client";
 
-import React, { useEffect } from "react";
+import React, { Suspense } from "react";
 import Link from "next/link";
-import { useSearchParams } from "next/navigation";
 
 import { Button } from "@/components/ui/button";
 import ContactForm from "@/components/ContactForm";
+import ScrollHandler from "@/components/ScrollHandler";
 
 import {
   Carousel,
@@ -96,22 +96,13 @@ const customers = [
 
 export default function HomePage() {
   const { isMobile } = useMediaQuery();
-  const searchParams = useSearchParams();
-  const scrollParam = searchParams.get("scroll");
-
-  useEffect(() => {
-    if (scrollParam) {
-      const timer = setTimeout(() => {
-        const element = document.getElementById(scrollParam);
-        if (!element) return;
-        window.scrollTo({ top: element.offsetTop, behavior: "smooth" });
-      }, 200);
-      return () => clearTimeout(timer);
-    }
-  }, [scrollParam]);
 
   return (
     <section className="w-full">
+      <Suspense>
+        <ScrollHandler />
+      </Suspense>
+
       <div className="lg:max-w-480 mx-auto lg:px-20">
         <div className="grid grid-cols-4">
           {heroCollage.map((img, index) => (
