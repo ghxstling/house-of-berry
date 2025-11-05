@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "next/image";
 import {
   Accordion,
   AccordionContent,
@@ -10,54 +9,38 @@ import Link from "next/link";
 
 export default function Faqs() {
   return (
-    <div className="w-full min-h-screen flex flex-col items-center justify start py-10 bg-hob-lightpink">
+    <div className="w-full bg-hob-lightpink">
       {/* HERO SECTION */}
-      <div className="flex flex-col items-center text-center mb-12 px-4">
+      <div className="flex flex-col items-center text-center mb-12 lg:px-20">
         {/* IMAGE COLLAGE */}
-        <div className="grid grid-cols-4">
-          <div className="lg:size-100 relative">
-            <Image
-              src="/jacqueline.jpg"
-              fill
-              alt="Jacqueline"
-              className="object-cover"
-            />
-          </div>
-          <div className="lg:size-100 relative">
-            <Image
-              src="/matchapour.jpeg"
-              fill
-              alt="Matcha Pour"
-              className="object-cover"
-            />
-          </div>
-          <div className="lg:size-100 relative">
-            <Image
-              src="/marketing/showcase-1.jpeg"
-              fill
-              alt="Matcha Setup"
-              className="object-cover"
-            />
-          </div>
-          <div className="lg:size-100 relative">
-            <Image
-              src="/marketing/showcase-2.jpeg"
-              fill
-              alt="Matcha Showcase of Materials"
-              className="object-cover"
-            />
-          </div>
-        </div>
-
-        <div className="relative lg:w-150 lg:h-80">
-          <Image
-            src="/header_logo.jpg"
-            fill
-            alt="House of Berry Logo"
-            className="object-cover"
+        <div className="grid grid-flow-col">
+          <img
+            src="/jacqueline.jpg"
+            alt="Jacqueline"
+            className="lg:size-100 size-full object-cover"
+          />
+          <img
+            src="/matchapour.jpeg"
+            alt="Matcha Pour"
+            className="lg:size-100 size-full object-cover"
+          />
+          <img
+            src="/marketing/showcase-1.jpeg"
+            alt="Matcha Setup"
+            className="lg:size-100 size-full object-cover"
+          />
+          <img
+            src="/marketing/showcase-2.jpeg"
+            alt="Matcha Showcase of Materials"
+            className="lg:size-100 size-full object-cover"
           />
         </div>
-        <div className="lg:mt-6 lg:text-lg text-hob-darkgray">
+        <img
+          src="/header_logo.jpg"
+          alt="House of Berry Logo"
+          className="lg:w-150 lg:h-80 w-60 mb-8 lg:mb-16 h-full object-cover"
+        />
+        <div className="lg:text-lg text-hob-darkgray">
           <p className="font-bold">GOT A QUESTION?</p>
           <p>
             If you have any other questions feel free to <br />
@@ -75,7 +58,7 @@ export default function Faqs() {
       <Accordion
         type="single"
         collapsible
-        className="lg:w-4xl lg:text-lg mx-auto lg:px-4"
+        className="lg:w-4xl lg:mx-auto px-8 w-full text-lg"
         defaultValue="item-1"
       >
         <AccordionItem value="item-1">
