@@ -11,9 +11,9 @@ import {
   DropdownMenuTrigger,
   DropdownMenuItem,
 } from "@/components/ui/dropdown-menu";
-import { Button } from "@/components/ui/button";
 
 import { useMediaQuery } from "@/hooks/useMediaQuery";
+import { Menu } from "lucide-react";
 
 const LINK_STYLE = "hover:text-hob-pink transition-colors duration-100";
 
@@ -52,8 +52,8 @@ export default function Header() {
       {isMobile ? (
         <nav className="z-10 p-4 text-gray-800 font-semibold">
           <DropdownMenu>
-            <DropdownMenuTrigger asChild>
-              <Button variant="outline">Menu</Button>
+            <DropdownMenuTrigger>
+              <Menu />
             </DropdownMenuTrigger>
 
             <DropdownMenuContent
@@ -76,7 +76,7 @@ export default function Header() {
               </Link>
               <span
                 onClick={(e) => handleScrollToContact(e)}
-                className={LINK_STYLE}
+                className={LINK_STYLE + " cursor-pointer"}
               >
                 <DropdownMenuItem>CONTACT</DropdownMenuItem>
               </span>
@@ -84,7 +84,7 @@ export default function Header() {
           </DropdownMenu>
         </nav>
       ) : (
-        <nav className="z-10 grid grid-flow-col justify-end w-full lg:gap-8 text-gray-800 font-semibold">
+        <nav className="z-10 grid grid-flow-col justify-end w-full lg:gap-8 text-gray-800 font-semibold text-lg pr-8">
           <Link href="/" className={LINK_STYLE}>
             Home
           </Link>
@@ -99,7 +99,7 @@ export default function Header() {
           </Link>
           <span
             onClick={(e) => handleScrollToContact(e)}
-            className={LINK_STYLE}
+            className={LINK_STYLE + " cursor-pointer"}
           >
             Contact
           </span>
