@@ -4,18 +4,18 @@ import { Button } from "@/components/ui/button";
 
 export default function About() {
   return (
-    <section className="w-full lg:h-[60rem] relative bg-hob-lightpink lg:bg-none">
+    <section className="w-full lg:h-240 relative bg-hob-lightpink lg:bg-none">
       {/* Background Image */}
       <img
         src="/about-us.png"
         alt="Photo of Jacqueline"
-        className="w-full h-60 lg:h-full object-cover -z-10"
+        className="w-full h-100 lg:h-full object-cover -z-10"
       />
 
       {/* Text Overlay */}
-      <div className="relative px-6 py-10 text-center lg:absolute lg:right-30 lg:top-20 lg:w-[38rem] lg:space-y-4 lg:text-white">
+      <div className="relative px-6 pt-10 text-center lg:absolute lg:right-30 lg:top-20 lg:w-152 lg:space-y-4 lg:text-white">
         <h1 className="text-6xl lg:text-8xl font-script">About Us</h1>
-        <div className="lg:text-lg space-y-6 lg:space-y-4">
+        <div className="lg:text-lg space-y-4 lg:space-y-4">
           <p>A fun experience. An act of creativity. A moment of indulgence.</p>
           <p>
             House of Berry was born from a simple love: the daily ritual of
